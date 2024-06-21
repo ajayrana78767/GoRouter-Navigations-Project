@@ -4,8 +4,8 @@ import 'package:gorouter_navigation_project/pages/about_page.dart';
 import 'package:gorouter_navigation_project/pages/contact_us_page.dart';
 import 'package:gorouter_navigation_project/pages/home_page.dart';
 import 'package:gorouter_navigation_project/pages/profile_page.dart';
-import 'package:gorouter_navigation_project/pages/error_page.dart';
 import 'package:gorouter_navigation_project/project/routes/app_route_constants.dart';
+import 'package:gorouter_navigation_project/pages/error_page.dart';
 
 class MyAppRouter {
   GoRouter router = GoRouter(
@@ -13,34 +13,24 @@ class MyAppRouter {
       GoRoute(
         name: MyAppRouteConstants.homeRouteName,
         path: '/',
-        pageBuilder: (context, state) {
-          return const MaterialPage(child: Home());
-        },
+        pageBuilder: (context, state) => const MaterialPage(child: Home()),
       ),
       GoRoute(
         name: MyAppRouteConstants.profileRouteName,
         path: '/profile',
-        pageBuilder: (context, state) {
-          return const MaterialPage(child: Profile());
-        },
+        pageBuilder: (context, state) => const MaterialPage(child: Profile()),
       ),
       GoRoute(
         name: MyAppRouteConstants.aboutRouteName,
         path: '/about',
-        pageBuilder: (context, state) {
-          return const MaterialPage(child: About());
-        },
+        pageBuilder: (context, state) => const MaterialPage(child: About()),
       ),
       GoRoute(
         name: MyAppRouteConstants.contactUsRouteName,
         path: '/contactUs',
-        pageBuilder: (context, state) {
-          return const MaterialPage(child: ContactUs());
-        },
+        pageBuilder: (context, state) => const MaterialPage(child: ContactUs()),
       ),
     ],
-    errorPageBuilder: (context, state) {
-      return const MaterialPage(child: Error());
-    },
+    errorPageBuilder: (context, state) => const MaterialPage(child: Error()),
   );
 }

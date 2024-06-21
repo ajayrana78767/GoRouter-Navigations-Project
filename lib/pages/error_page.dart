@@ -10,11 +10,14 @@ class Error extends StatefulWidget {
 class _ErrorState extends State<Error> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.teal,
-        title: Text('Error Screen ',style: TextStyle(color: Colors.white),),
+        title: const Text(
+          'Error Screen ',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
     );
   }
