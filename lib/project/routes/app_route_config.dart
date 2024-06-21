@@ -17,8 +17,9 @@ class MyAppRouter {
       ),
       GoRoute(
         name: MyAppRouteConstants.profileRouteName,
-        path: '/profile',
-        pageBuilder: (context, state) => const MaterialPage(child: Profile()),
+        path: '/profile/:username',
+        pageBuilder: (context, state) =>
+             MaterialPage(child: Profile(userName: state.pathParameters['username']!,)),
       ),
       GoRoute(
         name: MyAppRouteConstants.aboutRouteName,

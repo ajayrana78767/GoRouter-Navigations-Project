@@ -20,7 +20,9 @@ class Home extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 GoRouter.of(context)
-                    .pushNamed(MyAppRouteConstants.profileRouteName);
+                    .pushNamed(MyAppRouteConstants.profileRouteName,pathParameters: {
+                      'username':'Ajay Rana',
+                    });
               },
               child: const Text('Profile Screen'),
             ),
