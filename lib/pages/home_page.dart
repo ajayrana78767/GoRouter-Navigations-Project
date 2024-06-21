@@ -10,11 +10,43 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.teal,
-        title: Text('Home Screen ',style: TextStyle(color: Colors.white),),
+        title: const Text(
+          'Home Screen ',
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            const SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
+                onPressed: () {}, child: const Text('Profile Screen')),
+            const SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
+                onPressed: () {}, child: const Text('ContactUs Screen')),
+            const SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
+                onPressed: () {}, child: const Text('About Screen')),
+            const SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
+                onPressed: () {}, child: const Text('Profile Screen')),
+            const SizedBox(
+              height: 20,
+            ),
+          ],
+        ),
       ),
     );
   }

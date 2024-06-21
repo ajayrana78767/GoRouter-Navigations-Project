@@ -14,7 +14,7 @@ class _ContactUsState extends State<ContactUs> {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.teal,
-        title: Text('ContactUs Screen ',style: TextStyle(color: Colors.white),),
+        title: const Text('ContactUs Screen ',style: TextStyle(color: Colors.white),),
       ),
     );
   }

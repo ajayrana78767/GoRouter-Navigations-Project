@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gorouter_navigation_project/pages/home_page.dart';
+import 'package:gorouter_navigation_project/project/routes/app_route_config.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,18 +8,13 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-       
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const Home(),
+    return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
+      routeInformationParser: MyAppRouter().router.routeInformationParser,
+      routerDelegate: MyAppRouter().router.routerDelegate,
+      routeInformationProvider: MyAppRouter().router.routeInformationProvider ,
     );
   }
 }
-
