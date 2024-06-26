@@ -10,11 +10,14 @@ class ContactUs extends StatefulWidget {
 class _ContactUsState extends State<ContactUs> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.teal,
-        title: const Text('ContactUs Screen ',style: TextStyle(color: Colors.white),),
+        title: const Text(
+          'ContactUs Screen ',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
     );
   }

@@ -10,11 +10,14 @@ class About extends StatefulWidget {
 class _AboutState extends State<About> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.teal,
-        title: Text('About Screen ',style: TextStyle(color: Colors.white),),
+        title: Text(
+          'About Screen ',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
     );
   }

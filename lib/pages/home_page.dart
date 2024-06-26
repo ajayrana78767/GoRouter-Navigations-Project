@@ -19,9 +19,11 @@ class Home extends StatelessWidget {
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                GoRouter.of(context)
-                    .pushNamed(MyAppRouteConstants.profileRouteName,pathParameters: {
-                      'username':'Ajay Rana',
+                GoRouter.of(context).pushNamed(
+                    MyAppRouteConstants.profileRouteName,
+                    pathParameters: {
+                      'username': 'Ajay Rana',
+                      'userId': 'jshsdvcvdiwudyhbs827365372',
                     });
               },
               child: const Text('Profile Screen'),
